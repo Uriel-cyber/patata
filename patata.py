@@ -15,7 +15,7 @@ st.markdown(
     
     /* Fondo de la barra lateral (Sidebar) */
     [data-testid="stSidebar"] {
-        background-color: #1e293b; /* Gris azulado */
+        background-color: #0f172a; /* Gris azulado */
     }
     
     /* Cambiar el color de los títulos a blanco brillante */
