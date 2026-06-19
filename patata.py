@@ -4,6 +4,28 @@ from scipy.optimize import milp, LinearConstraint, Bounds
 
 # Configuración de la página
 st.set_page_config(page_title="Simulador de Optimización RF Total", layout="wide")
+# Inyectar CSS personalizado para cambiar el fondo de la pantalla y la barra lateral
+st.markdown(
+    """
+    <style>
+    /* Fondo de la aplicación principal */
+    .stApp {
+        background-color: #0f172a; /* Azul noche oscuro */
+    }
+    
+    /* Fondo de la barra lateral (Sidebar) */
+    [data-testid="stSidebar"] {
+        background-color: #1e293b; /* Gris azulado */
+    }
+    
+    /* Cambiar el color de los títulos a blanco brillante */
+    h1, h2, h3 {
+        color: #f8fafc !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.title("🎛️ Simulador Universal de Programación Lineal para Drones RF")
 st.markdown("""
